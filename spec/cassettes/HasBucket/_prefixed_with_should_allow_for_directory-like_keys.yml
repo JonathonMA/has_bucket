@@ -1,0 +1,296 @@
+---
+http_interactions:
+- request:
+    method: put
+    uri: https://s3.amazonaws.com/jma-2014-test-bucket/other/bar
+    body:
+      encoding: UTF-8
+      string: bar
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+      X-Amz-Acl:
+      - private
+      X-Amz-Storage-Class:
+      - STANDARD
+      Content-Type:
+      - application/octet-stream
+      Content-Length:
+      - '3'
+      Date:
+      - Thu, 06 Nov 2014 05:51:19 GMT
+      Content-Md5:
+      - N7UdGUp1E+RbVvZSTy1R8g==
+      Authorization:
+      - AWS AKIAICVNTIM4AWNLWR4Q:YPVKeMFUCwCUPnfItNUf7IQCI0E=
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      X-Amz-Id-2:
+      - 0ZloJHs2brWSSpKu3K077wmNaMjwHravbXRaZhvVyzJdDTtVQjorAkCR1QYxBKTt
+      X-Amz-Request-Id:
+      - 45D50F0FD481AD6B
+      Date:
+      - Thu, 06 Nov 2014 05:49:40 GMT
+      Etag:
+      - '"37b51d194a7513e45b56f6524f2d51f2"'
+      Content-Length:
+      - '0'
+      Server:
+      - AmazonS3
+    body:
+      encoding: UTF-8
+      string: ''
+    http_version: 
+  recorded_at: Thu, 06 Nov 2014 05:51:19 GMT
+- request:
+    method: put
+    uri: https://s3.amazonaws.com/jma-2014-test-bucket/foo/bar
+    body:
+      encoding: UTF-8
+      string: bar
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+      X-Amz-Acl:
+      - private
+      X-Amz-Storage-Class:
+      - STANDARD
+      Content-Type:
+      - application/octet-stream
+      Content-Length:
+      - '3'
+      Date:
+      - Thu, 06 Nov 2014 05:51:19 GMT
+      Content-Md5:
+      - N7UdGUp1E+RbVvZSTy1R8g==
+      Authorization:
+      - AWS AKIAICVNTIM4AWNLWR4Q:UDy0jS3bhBI8MtXR17Hz2zwJfXA=
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      X-Amz-Id-2:
+      - qb174s4k6rVbj3BDetOWP6Vcn4jO8GfBb7FnDImVpM3R5wTrBNXqKLUSbkMi5/bR
+      X-Amz-Request-Id:
+      - F695B0DA2108C9A6
+      Date:
+      - Thu, 06 Nov 2014 05:49:41 GMT
+      Etag:
+      - '"37b51d194a7513e45b56f6524f2d51f2"'
+      Content-Length:
+      - '0'
+      Server:
+      - AmazonS3
+    body:
+      encoding: UTF-8
+      string: ''
+    http_version: 
+  recorded_at: Thu, 06 Nov 2014 05:51:19 GMT
+- request:
+    method: put
+    uri: https://s3.amazonaws.com/jma-2014-test-bucket/foo/baz
+    body:
+      encoding: UTF-8
+      string: baz
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+      X-Amz-Acl:
+      - private
+      X-Amz-Storage-Class:
+      - STANDARD
+      Content-Type:
+      - application/octet-stream
+      Content-Length:
+      - '3'
+      Date:
+      - Thu, 06 Nov 2014 05:51:19 GMT
+      Content-Md5:
+      - c/7/pLf2u2jkTPmEyF9uiA==
+      Authorization:
+      - AWS AKIAICVNTIM4AWNLWR4Q:yeDNIes1AETpB70uPpN+QkEFK/c=
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      X-Amz-Id-2:
+      - X41moZPTikmQ9qyXe2MhryuKUL2KNMuLd0n1YuqBBogYxs1S2zIEsXxvOK3qcMpz
+      X-Amz-Request-Id:
+      - 13519A8721498C24
+      Date:
+      - Thu, 06 Nov 2014 05:49:42 GMT
+      Etag:
+      - '"73feffa4b7f6bb68e44cf984c85f6e88"'
+      Content-Length:
+      - '0'
+      Server:
+      - AmazonS3
+    body:
+      encoding: UTF-8
+      string: ''
+    http_version: 
+  recorded_at: Thu, 06 Nov 2014 05:51:19 GMT
+- request:
+    method: get
+    uri: https://s3.amazonaws.com/jma-2014-test-bucket/?prefix=foo/
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+      Date:
+      - Thu, 06 Nov 2014 05:51:19 GMT
+      Authorization:
+      - AWS AKIAICVNTIM4AWNLWR4Q:qriqUriOjBVlpEGibmxSWIPzbQE=
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      X-Amz-Id-2:
+      - "/R2qDg4Pznh+xskYG41FrvWLPD6+hKjaoQiNrv60v9fDPzrKs3bcaruZGtTKkrym"
+      X-Amz-Request-Id:
+      - 8D75F2A7DC47E93A
+      Date:
+      - Thu, 06 Nov 2014 05:49:43 GMT
+      Content-Type:
+      - application/xml
+      Transfer-Encoding:
+      - chunked
+      Server:
+      - AmazonS3
+    body:
+      encoding: UTF-8
+      string: |-
+        <?xml version="1.0" encoding="UTF-8"?>
+        <ListBucketResult xmlns="http://s3.amazonaws.com/doc/2006-03-01/"><Name>jma-2014-test-bucket</Name><Prefix>foo/</Prefix><Marker></Marker><MaxKeys>1000</MaxKeys><IsTruncated>false</IsTruncated><Contents><Key>foo/bar</Key><LastModified>2014-11-06T05:49:41.000Z</LastModified><ETag>&quot;37b51d194a7513e45b56f6524f2d51f2&quot;</ETag><Size>3</Size><Owner><ID>5d307ea628ee26d90fe9b4b8500d17671fd927387d7d746ba636af2808b85e6a</ID><DisplayName>jma</DisplayName></Owner><StorageClass>STANDARD</StorageClass></Contents><Contents><Key>foo/baz</Key><LastModified>2014-11-06T05:49:42.000Z</LastModified><ETag>&quot;73feffa4b7f6bb68e44cf984c85f6e88&quot;</ETag><Size>3</Size><Owner><ID>5d307ea628ee26d90fe9b4b8500d17671fd927387d7d746ba636af2808b85e6a</ID><DisplayName>jma</DisplayName></Owner><StorageClass>STANDARD</StorageClass></Contents></ListBucketResult>
+    http_version: 
+  recorded_at: Thu, 06 Nov 2014 05:51:19 GMT
+- request:
+    method: delete
+    uri: https://s3.amazonaws.com/jma-2014-test-bucket/other/bar
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+      Date:
+      - Thu, 06 Nov 2014 05:51:19 GMT
+      Authorization:
+      - AWS AKIAICVNTIM4AWNLWR4Q:1i0QmZHN8g8fQdCJF1hPN80besA=
+  response:
+    status:
+      code: 204
+      message: No Content
+    headers:
+      X-Amz-Id-2:
+      - kGVtuc0+PQij103A7OeVR4UnWcr9iocfQkFpMlYafTGEPwGE4LP1EbnBmSKrEwE4
+      X-Amz-Request-Id:
+      - A58A9D606F53E29C
+      Date:
+      - Thu, 06 Nov 2014 05:49:44 GMT
+      Server:
+      - AmazonS3
+    body:
+      encoding: UTF-8
+      string: ''
+    http_version: 
+  recorded_at: Thu, 06 Nov 2014 05:51:19 GMT
+- request:
+    method: delete
+    uri: https://s3.amazonaws.com/jma-2014-test-bucket/foo/bar
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+      Date:
+      - Thu, 06 Nov 2014 05:51:19 GMT
+      Authorization:
+      - AWS AKIAICVNTIM4AWNLWR4Q:15NmXZGdKaCsgC1cfcM4Ft2K0IM=
+  response:
+    status:
+      code: 204
+      message: No Content
+    headers:
+      X-Amz-Id-2:
+      - aUkh5l6ozZFt0Fe2C408I2aLtMFGVcl0px+wjKcrh5d/WpXv3tXwmrhRxUYtHBsl
+      X-Amz-Request-Id:
+      - D4C27C12EA249077
+      Date:
+      - Thu, 06 Nov 2014 05:49:45 GMT
+      Server:
+      - AmazonS3
+    body:
+      encoding: UTF-8
+      string: ''
+    http_version: 
+  recorded_at: Thu, 06 Nov 2014 05:51:19 GMT
+- request:
+    method: delete
+    uri: https://s3.amazonaws.com/jma-2014-test-bucket/foo/baz
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+      Date:
+      - Thu, 06 Nov 2014 05:51:19 GMT
+      Authorization:
+      - AWS AKIAICVNTIM4AWNLWR4Q:rEP0FtX3y3Ipjj/gIOjUp9K1VSI=
+  response:
+    status:
+      code: 204
+      message: No Content
+    headers:
+      X-Amz-Id-2:
+      - M0ankGKK8OxTyZwxX5dJNwmc+z3JzlOklU/xfhDIRMmYfK5unz0LL7ff9LGjRGOr
+      X-Amz-Request-Id:
+      - 5BAD8CF854E442B8
+      Date:
+      - Thu, 06 Nov 2014 05:49:46 GMT
+      Server:
+      - AmazonS3
+    body:
+      encoding: UTF-8
+      string: ''
+    http_version: 
+  recorded_at: Thu, 06 Nov 2014 05:51:19 GMT
+recorded_with: VCR 2.9.3

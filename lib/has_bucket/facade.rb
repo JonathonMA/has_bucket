@@ -13,6 +13,10 @@ module HasBucket
       object(key).exists?
     end
 
+    def prefixed_with(prefix)
+      bucket.objects(prefix: prefix).map(&:key)
+    end
+
     def []=(key, content)
       s3_object = object(key)
       s3_object.acl = "private"

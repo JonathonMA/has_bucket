@@ -29,4 +29,19 @@ describe HasBucket do
     subject.delete key
     expect(subject).to_not include(key)
   end
+
+  it "#prefixed_with should allow for directory-like keys", :vcr do
+    subject["other/bar"] = "bar"
+    subject["foo/bar"] = "bar"
+    subject["foo/baz"] = "baz"
+
+    expect(subject.prefixed_with("foo/")).to eq %w(
+      foo/bar
+      foo/baz
+    )
+
+    subject.delete "other/bar"
+    subject.delete "foo/bar"
+    subject.delete "foo/baz"
+  end
 end
