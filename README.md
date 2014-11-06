@@ -25,15 +25,15 @@ Or install it yourself as:
 ## Usage
 
 ```ruby
-    s3 = HasBucket.of("https://AWS_ACCESS_KEY:AWS_SECRET_ACCESS_KEY@s3.amazonaws.com/BUCKET_NAME")
+s3 = HasBucket.of("https://AWS_ACCESS_KEY:AWS_SECRET_ACCESS_KEY@s3.amazonaws.com/BUCKET_NAME")
 
-    s3.include?("key") # => false
-    s3["key"] = "value"
-    s3["key"] # => "value"
-    s3.include?("key") # => true
-    s3.delete("key")
-    s3.include?("key") # => false
-    s3.url_for("key") # => authenticated URL to object
+s3.include?("key") # => false
+s3["key"] = "value"
+s3["key"] # => "value"
+s3.include?("key") # => true
+s3.delete("key")
+s3.include?("key") # => false
+s3.url_for("key") # => authenticated URL to object
 ```
 
 ## TODO
