@@ -1,5 +1,7 @@
 # I Has a Bucket
 
+[![Build Status](https://travis-ci.org/JonathonMA/has_bucket.svg?branch=master)](https://travis-ci.org/JonathonMA/has_bucket)
+
 ![I Has a Bucket](http://i1.kym-cdn.com/photos/images/newsfeed/000/000/026/lolrus.jpg)
 
 Simple wrapper around single-bucket S3 storage.
