@@ -1,8 +1,8 @@
 require 'spec_helper'
 
-describe HasBucket do
+describe HazBucket do
   it 'has a version number' do
-    expect(HasBucket::VERSION).not_to be nil
+    expect(HazBucket::VERSION).not_to be nil
   end
 
   let(:url) do
@@ -13,7 +13,7 @@ describe HasBucket do
   let(:key) { "foo" }
   let(:value) { "bar" }
 
-  subject { HasBucket.of(url) }
+  subject { HazBucket.of(url) }
 
   it "should allow storage of blobs on S3", :vcr do
     subject.delete key

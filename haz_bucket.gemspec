@@ -1,14 +1,14 @@
 # coding: utf-8
 lib = File.expand_path('../lib', __FILE__)
 $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
-require 'has_bucket/version'
+require 'haz_bucket/version'
 
 Gem::Specification.new do |spec|
-  spec.name          = "has_bucket"
-  spec.version       = HasBucket::VERSION
+  spec.name          = "haz_bucket"
+  spec.version       = HazBucket::VERSION
   spec.authors       = ["Jonathon M. Abbott"]
   spec.email         = ["jonathona@everydayhero.com.au"]
-  spec.summary       = "i has an S3 bucket"
+  spec.summary       = "i haz an S3 bucket"
   spec.description   = "Simple wrapper around single-bucket S3 storage"
   spec.homepage      = "https://github.com/JonathonMA/has_bucket"
   spec.license       = "MIT"

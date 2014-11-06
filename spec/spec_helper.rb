@@ -1,5 +1,5 @@
 $LOAD_PATH.unshift File.expand_path('../../lib', __FILE__)
-require 'has_bucket'
+require 'haz_bucket'
 
 require 'vcr'
 
