@@ -1,6 +1,6 @@
 require "uri_config"
 
-module HasBucket
+module HazBucket
   class S3Config < URIConfig::Config
     alias_method :access_key_id, :username
     alias_method :secret_access_key, :password

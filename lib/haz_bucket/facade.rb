@@ -2,7 +2,7 @@ require "cgi"
 require "uri"
 require "s3"
 
-module HasBucket
+module HazBucket
   class Facade
     def initialize(service, bucket_name)
       @service = service

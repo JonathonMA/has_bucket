@@ -11,7 +11,7 @@ Simple wrapper around single-bucket S3 storage.
 Add this line to your application's Gemfile:
 
 ```ruby
-gem 'has_bucket'
+gem 'haz_bucket'
 ```
 
 And then execute:
@@ -20,12 +20,12 @@ And then execute:
 
 Or install it yourself as:
 
-    $ gem install has_bucket
+    $ gem install haz_bucket
 
 ## Usage
 
 ```ruby
-s3 = HasBucket.of("https://AWS_ACCESS_KEY:AWS_SECRET_ACCESS_KEY@s3.amazonaws.com/BUCKET_NAME")
+s3 = HazBucket.of("https://AWS_ACCESS_KEY:AWS_SECRET_ACCESS_KEY@s3.amazonaws.com/BUCKET_NAME")
 
 s3.include?("key") # => false
 s3["key"] = "value"
