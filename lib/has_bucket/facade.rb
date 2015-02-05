@@ -13,6 +13,10 @@ module HasBucket
       object(key).exists?
     end
 
+    def object_keys
+      bucket.objects.map(&:key)
+    end
+
     def prefixed_with(prefix)
       bucket.objects(prefix: prefix).map(&:key)
     end

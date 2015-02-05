@@ -44,4 +44,17 @@ describe HasBucket do
     subject.delete "foo/bar"
     subject.delete "foo/baz"
   end
+
+  it "#object_keys should return all object keys", :vcr do
+    subject["other/bar"] = "bar"
+    subject["foo/bar"] = "bar"
+
+    expect(subject.object_keys).to eq %w(
+      foo/bar
+      other/bar
+    )
+
+    subject.delete "other/bar"
+    subject.delete "foo/bar"
+  end
 end
