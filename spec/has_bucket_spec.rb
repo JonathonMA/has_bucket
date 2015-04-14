@@ -30,6 +30,25 @@ describe HasBucket do
     expect(subject).to_not include(key)
   end
 
+  it "should default content_type when not specified", :vcr do
+    subject[key] = value
+    response = Net::HTTP.get_response(URI(subject.url_for(key)))
+
+    expect(response["Content-Type"]).to eq("application/octet-stream")
+
+    subject.delete(key)
+  end
+
+  it "should determine content_type from extension", :vcr do
+    key = "foo.csv"
+    subject[key] = value
+    response = Net::HTTP.get_response(URI(subject.url_for(key)))
+
+    expect(response["Content-Type"]).to eq("text/csv")
+
+    subject.delete(key)
+  end
+
   it "#prefixed_with should allow for directory-like keys", :vcr do
     subject["other/bar"] = "bar"
     subject["foo/bar"] = "bar"
