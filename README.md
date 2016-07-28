@@ -22,6 +22,11 @@ Or install it yourself as:
 
     $ gem install has_bucket
 
+### With ruby 1.8
+
+`has_bucket` should work with ruby 1.8, but you'll need to ensure your bundle
+includes a compatible version of the mime-types gem (< 2).
+
 ## Usage
 
 ```ruby

@@ -1,7 +1,7 @@
 require "cgi"
 require "uri"
 require "s3"
-require "mime-types"
+require "mime/types"
 
 module HasBucket
   class Facade
@@ -19,7 +19,7 @@ module HasBucket
     end
 
     def prefixed_with(prefix)
-      bucket.objects(prefix: prefix).map(&:key)
+      bucket.objects(:prefix => prefix).map(&:key)
     end
 
     def []=(key, content)
